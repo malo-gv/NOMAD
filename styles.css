@@ -26,12 +26,9 @@ body {
 header {
     background-color: white;
     border-bottom: 1px solid #ddd;
-    padding: 1rem 0;
+    padding:0px;
 }
 
-.logo {
-    height: 40px;
-}
 
 nav ul {
     list-style: none;
@@ -56,12 +53,12 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 4px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--text-light);
     margin-bottom: 10px;
 }
@@ -70,6 +67,7 @@ nav a:hover {
 footer {
     background: white;
     text-align: center;
+    align-items: center;
     padding: 4px;
     font-size: 12px;
     border-top: 1px;
@@ -82,4 +80,76 @@ footer {
 
 .navHead{
     font-size: 30px;
+}
+
+#bas{
+    text-align: center;
+    color: #2e7d32;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#quote {
+    font-style: italic;
+    font-size: 21px;
+}
+
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+}
+
+.contact-form h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    background-color: #2e7d32;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #256428;
 }

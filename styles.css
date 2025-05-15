@@ -1,16 +1,19 @@
 :root {
-    --green: #2e7d32;
-    --beige: #f5f1ea;
+
     --text-dark: #1d1d1d;
     --text-light: #666;
     --font: 'Inter', sans-serif;
 }
 
+section {
+    border-radius: 50px;
+}
 
 body {
-    font-family: var(--font);
-    background-color: var(--beige);
-    color: var(--text-dark);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    background-image: url("images/background.png");
+    background-size: cover;
+    color: white;
     line-height: 1.6;
 }
 
@@ -24,8 +27,6 @@ body {
 }
 
 header {
-    background-color: white;
-    border-bottom: 1px solid #ddd;
     padding:0px;
 }
 
@@ -38,34 +39,49 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--text-dark);
+    background-color: #16433C;
+    padding: 7px;
+    border-radius: 9px;
+    color: whitesmoke;
     font-weight: 500;
 }
 
 nav a:hover {
-    color: var(--green);
+    background: none;
+    color: #16433C;
+    border-color: #16433C;
+    border: solid;
+    background-color: white;
+
 }
 
 .hero {
+    margin-right: 50px;
+    margin-left: 50px;
     text-align: center;
-    padding: 50px;
-    background-color: var(--beige);
+    background-color: rgba(22, 67, 60, 0.6);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #16433C;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .hero h1 {
     font-size: 50px;
-    margin-bottom: 4px;
+
 }
 
 .hero p {
     font-size: 20px;
-    color: var(--text-light);
-    margin-bottom: 10px;
+    color: whitesmoke;
+    font-weight: bold;
+
 }
 
 
 footer {
-    background: white;
     text-align: center;
     align-items: center;
     padding: 4px;
@@ -76,6 +92,8 @@ footer {
 #logo {
     width: 200px;
     height: auto;
+    background-color: white;
+    border-radius: 50px;
 }
 
 .navHead{
@@ -84,7 +102,7 @@ footer {
 
 #bas{
     text-align: center;
-    color: #2e7d32;
+    color: white;
     padding: 10px;
     font-weight: bold;
     font-size: 14px;
@@ -152,4 +170,15 @@ footer {
 
 .contact-form button:hover {
     background-color: #256428;
+}
+
+.textBtn{
+    padding-top: 10px;
+    text-decoration: none;
+    background-color: white;
+    padding: 7px;
+    border-radius: 9px;
+    color: #16433C;
+    font-size: 25px;
+    font-weight: 500;
 }

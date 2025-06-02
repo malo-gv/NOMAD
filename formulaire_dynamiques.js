@@ -12,10 +12,9 @@ travelerInput.addEventListener('input', function () {
         return;
     }
 
-    // Évite de tout recréer si le nombre est le même
     if (count === currentCount) return;
 
-    container.innerHTML = ''; // Réinitialiser le formulaire
+    container.innerHTML = '';
     currentCount = count;
 
     for (let i = 1; i <= count; i++) {

@@ -59,10 +59,9 @@ nav a:hover {
 .hero {
     margin-right: 230px;
     margin-left: 230px;
+
     text-align: center;
     background-color: rgba(22, 67, 60, 0.65);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #16433C;
     backdrop-filter: blur(6px);
     padding-left: 30px;
     padding-right: 30px;
@@ -77,9 +76,9 @@ nav a:hover {
 }
 
 .hero p {
+    color: #e0f2f1;
     font-size: 20px;
-    color: whitesmoke;
-    font-weight: bold;
+    font-weight: normal;
     margin-top: 0px;
 }
 

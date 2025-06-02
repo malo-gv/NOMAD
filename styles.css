@@ -26,9 +26,6 @@ body {
     align-items: center;
 }
 
-header {
-    padding:0px;
-}
 
 
 nav ul {
@@ -55,21 +52,27 @@ nav a:hover {
 
 }
 
+#voyager{
+    padding-top: 5px;
+}
+
 .hero {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 230px;
+    margin-left: 230px;
     text-align: center;
-    background-color: rgba(22, 67, 60, 0.6);
+    background-color: rgba(22, 67, 60, 0.65);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #16433C;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    backdrop-filter: blur(6px);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
 }
 
 .hero h1 {
     font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 
 }
 
@@ -77,7 +80,7 @@ nav a:hover {
     font-size: 20px;
     color: whitesmoke;
     font-weight: bold;
-
+    margin-top: 0px;
 }
 
 
@@ -102,6 +105,8 @@ footer {
 
 #bas{
     text-align: center;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #16433C;
     color: white;
     padding: 10px;
     font-weight: bold;
@@ -181,4 +186,177 @@ footer {
     color: #16433C;
     font-size: 25px;
     font-weight: 500;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: rgba(0, 51, 43, 0.65);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    backdrop-filter: blur(6px);
+}
+
+.contact-form h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-form p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.4rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #00332b;
+    transition: box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #00b894;
+}
+
+.contact-form .btn {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #00b894, #00796b);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form .btn:hover {
+    background: linear-gradient(135deg, #00796b, #004d40);
+    transform: scale(1.02);
+}
+
+.passenger-group {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+}
+
+.mission {
+    background-color: rgba(0, 51, 43, 0.65);
+    backdrop-filter: blur(6px);
+    padding: 32px 48px;
+    border-radius: 30px;
+    color: #ffffff;
+    margin: 32px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.mission h1, .mission h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    color: #ffffff;
+    -webkit-text-stroke: 1px #16433C;
+}
+
+.mission p {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #e0f2f1;
+}
+
+.testimonials .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 8px;
+    color: #b2dfdb;
+}
+
+#loadMoreBtn {
+    margin: 24px auto;
+    display: block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #00b894, #00796b);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#loadMoreBtn:hover {
+    background: linear-gradient(135deg, #00796b, #004d40);
+    transform: scale(1.05);
+}
+
+.engagement {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 5px solid #00b894;
+    margin: 24px 0;
+    padding: 20px 30px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.engagement h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.engagement p {
+    font-size: 18px;
+    color: #d0f0ea;
+}
+
+#apropos {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
 }

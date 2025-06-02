@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Destination - NOMAD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <img id="logo" src="images/NOMAD LOGO.png" alt="Logo NOMAD" >
+        <nav>
+            <ul>
+                <li><a class="navHead" href="accueil.html">Accueil</a></li>
+                <li><a class="navHead" href="">Notre mission</a></li>
+                <li><a class="navHead" href="">Destinations</a></li>
+                <li><a class="navHead" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="hero">
+
+        <h1>Et si votre aventure commençait bien avant votre arriver à destination ?</h1> <br></br>
+        <p>
+            Chez NOMAD, nous croyons qu’il est temps de redécouvrir le voyage dans toute sa richesse : prendre le temps, suivre la route, traverser les paysages au rythme des rails, des routes ou des flots.
+            Que vous rêviez de fjords scandinaves, de plages paradisiaque, de paysages africains ou de terres au coeur de l'Europe, nous vous proposons une nouvelle façon de voyager : sans avion, sans précipitation, sans compromis sur la beauté du monde.
+            Notre sélection de destinations vous prouve qu’il est possible d’aller loin, très loin même, en réduisant drastiquement votre empreinte carbone, en vivant pleinement chaque étape du trajet, et en vous reconnectant au plaisir simple de partir pour de vrai.
+        </p>
+    </section><br></br>
+    <section class="hero">
+        <h1>Découvrez notre catalogue de destinations</h1><br></br>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="imageCarousel">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                    <img src="../images/Photo-Norvège.png" alt="photo de norvege" class="img-destination" style="border-radius: 10px;">
+                        <p>Norvège</p>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../images/photo-Croatie.png" alt="photo de croatie" class="img-destination" style="border-radius: 10px;">
+                        <p>Croatie</p>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../images/photo-Saint-Marin.png" alt="photo de st marin" class="img-destination" style="border-radius: 10px;">
+                        <p>Saint-Marin</p>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../images/Photo-Autriche.png" alt="photo de Autriche" class="img-destination" style="border-radius: 10px;">
+                        <p>Autriche</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Photo-thailande3.png" alt="photo de thailande" class = "img-destination"  style="border-radius: 10px;">
+                        <p>Thaïlande</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Photo-Inde.png" alt="photo d'Inde" class="img-destination" style="border-radius: 10px;">
+                        <p>Inde</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Photo-Mongolie.png" alt="photo de Mongolie" class="img-destination" style="border-radius: 10px;">
+                        <p>Mongolie</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Photo-Cote d'Ivoire.png" alt="photo de cote d'ivoire" class="img-destination" style="border-radius: 10px;">
+                        <p>Côte d'Ivoire</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Photo-Tanzanie.png" alt="photo de tanzanie" class="img-destination" style="border-radius: 10px;">
+                        <p>Tanzanie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br></br>
+    <section class="hero">
+        <h1>Carte du Monde</h1>
+        <div id="map"></div>
+    </section>
+
+
+</main>
+
+<footer>
+    <div>
+        <p id="bas">2025 NOMAD. Malo GAVARD - Yéléna Sainte-Rose. Tous droits réservés.</p>
+    </div>
+</footer>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js.js"></script>
+</body>
+</html>

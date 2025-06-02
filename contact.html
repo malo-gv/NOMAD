@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NOMAD</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="formulaire_dynamiques.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img id="logo" src="images/NOMAD LOGO.png" alt="Logo NOMAD" >
+        <nav>
+            <ul>
+                <li><a class="navHead" href="accueil.html">Accueil</a></li>
+                <li><a class="navHead" href="mission.html">Notre mission</a></li>
+                <li><a class="navHead" href="">Destinations</a></li>
+                <li><a class="navHead" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="contact-form">
+        <h1>Organisez votre voyage sur mesure</h1>
+        <p>Remplissez ce formulaire en quelques clics, on s’occupe du reste !</p>
+
+        <form action="#" method="post">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Nom pour la réservation" required>
+
+            <label for="email">Adresse email</label>
+            <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+
+            <label for="departure-date">Date de départ</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+
+            <label for="return-date">Date de retour</label>
+            <input type="date" id="return-date" name="return-date" required>
+
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination" required>
+                <option value="">-- Choisissez une destination --</option>
+                <option value="japon">Japon</option>
+                <option value="canada">Canada</option>
+                <option value="bali">Bali</option>
+                <option value="islande">Islande</option>
+                <option value="maroc">Maroc</option>
+            </select>
+
+            <label for="travelers">Nombre de personnes</label>
+            <input type="number" id="travelers" name="travelers" min="1" max="20" placeholder="Ex: 3" required>
+
+            <div id="passenger-details"></div>
+
+
+            <label for="type">Type de voyage</label>
+            <select id="type" name="type" required>
+                <option value="">-- Sélectionnez --</option>
+                <option value="aventure">Rencontre avec l'habitant</option>
+                <option value="plage">Découverte des cultures cachées</option>
+                <option value="culturel">Exploration architecturale</option>
+                <option value="luxe">Retraite spirituelle</option>
+                <option value="famille">Adaptée aux familles</option>
+                <option value="surprise">Le choix NOMAD</option>
+            </select>
+
+            <label for="budget">Budget approximatif (par personne)</label>
+            <input type="number" id="budget" name="budget" min="100" max="10000" placeholder="Ex: 3000€" required>
+
+
+            <label for="message">Commentaires ou demandes spéciales (facultatif)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Ex : allergies, accessibilité, activités souhaitées..."></textarea>
+
+            <button type="submit" class="btn">Obtenir un devis personnalisé</button>
+        </form>
+    </section>
+
+
+    <section class="contact-form">
+        <h1>Simplement envie de discuter ?</h1>
+        <br>
+        <form action="#" method="post">
+            <textarea id="message2" name="message" rows="4" placeholder="Laissez nous un petit message..."></textarea>
+
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+</main>
+
+
+
+<footer>
+    <div>
+        <p id="bas">2025 NOMAD. Malo GAVARD - Yéléna Sainte-Rose. Tous droits réservés.</p>
+        <a id ="apropos" href="https://github.com/malo-gv/NOMAD">A propos (Github)</a>
+    </div>
+</footer>
+</body>
+</html>
